@@ -1,2 +1,1 @@
-# securerideinsuranceadvisor.github.io
-Official website for Zareen International Trading FZC showcasing building materials and industrial products.
+Official website of SecureRide Insurance Advisor – Car & Bike Insurance Services
