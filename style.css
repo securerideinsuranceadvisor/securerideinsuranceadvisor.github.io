@@ -160,3 +160,37 @@ footer {
     padding-top: 80px;
   }
 }
+
+/* =========================
+   MOBILE HERO FIX
+========================= */
+@media (max-width: 480px) {
+
+  .hero {
+    min-height: 110vh;
+  }
+
+  .hero-content {
+    padding-top: 120px; /* Push form down */
+    align-items: flex-start;
+  }
+
+  .hero-form {
+    max-width: 92%;
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .hero-form h1 {
+    font-size: 22px;
+  }
+
+  .hero-form p {
+    font-size: 13px;
+  }
+
+  .hero-form button {
+    font-size: 15px;
+    padding: 14px;
+  }
+}
