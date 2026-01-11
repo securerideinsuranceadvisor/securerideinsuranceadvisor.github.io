@@ -1,19 +1,8 @@
-let slides = document.querySelectorAll('.slide');
-let index = 0;
+const slides = document.querySelectorAll('.hero-slider img');
+let current = 0;
 
 setInterval(() => {
-  slides[index].classList.remove('active');
-  index = (index + 1) % slides.length;
-  slides[index].classList.add('active');
-}, 4000);
-
-document.getElementById('leadForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-
-  let vehicle = document.getElementById('vehicle').value;
-  let expiry = document.getElementById('expiry').value;
-
-  let message = `Hello, I want insurance details.%0A🚗 Vehicle: ${vehicle}%0A📅 Expiry: ${expiry}`;
-
-  window.open(`https://wa.me/917633801161?text=${message}`, '_blank');
-});
+  slides[current].classList.remove('active');
+  current = (current + 1) % slides.length;
+  slides[current].classList.add('active');
+}, 3500);
