@@ -1,27 +1,25 @@
-// SLIDER
-const slides = document.querySelectorAll('.hero-slider img');
-let current = 0;
+// Slider
+let slides = document.querySelectorAll('.slide');
+let index = 0;
 
 setInterval(() => {
-  slides[current].classList.remove('active');
-  current = (current + 1) % slides.length;
-  slides[current].classList.add('active');
-}, 3500);
+  slides[index].classList.remove('active');
+  index = (index + 1) % slides.length;
+  slides[index].classList.add('active');
+}, 4000);
 
-// WHATSAPP FORM SUBMISSION
-document.getElementById("insuranceForm").addEventListener("submit", function(e) {
+// WhatsApp Form
+function sendToWhatsApp(e) {
   e.preventDefault();
 
-  const vehicle = document.getElementById("vehicleNumber").value;
-  const expiry = document.getElementById("policyExpiry").value;
+  const vehicle = document.getElementById("vehicle").value;
+  const mobile = document.getElementById("mobile").value;
 
   const message =
-    `Hello SecureRide Insurance Advisor,%0A%0A` +
-    `Vehicle Number: ${vehicle}%0A` +
-    `Policy Expiry: ${expiry}%0A%0A` +
-    `Please share the best insurance quote.`;
+    `Hello, I need vehicle insurance assistance.\n\n` +
+    `Vehicle Number: ${vehicle}\n` +
+    `Mobile: ${mobile}`;
 
-  const whatsappURL = `https://wa.me/917633801161?text=${message}`;
-
-  window.open(whatsappURL, "_blank");
-});
+  const url = `https://wa.me/917633801161?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+}
