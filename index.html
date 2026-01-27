@@ -17,44 +17,29 @@
     <span>SecureRide Insurance Advisor</span>
   </div>
 
-  <a href="https://wa.me/919999999999" class="whatsapp-btn">WhatsApp Now</a>
+  <a href="https://wa.me/917633801161" class="whatsapp-btn" target="_blank">
+    WhatsApp Now
+  </a>
 </header>
 
+<!-- HERO SECTION -->
 <section class="hero">
 
+  <!-- SLIDER -->
   <div class="hero-slider">
-    <img src="assets/images/slider1.png" class="active">
-    <img src="assets/images/slider2.jpg">
+    <img src="assets/images/slider2.jpg" class="active">
     <img src="assets/images/slider3.jpg">
   </div>
-
-  <div class="quote-box">
-    <h1>Car & Bike Insurance</h1>
-    <p>Renewal • New Policy • Claim Assistance</p>
-
-    <input type="text" placeholder="Vehicle Number">
-    <select>
-      <option>Policy Expiry</option>
-      <option>Expired</option>
-      <option>Within 30 days</option>
-      <option>1 – 3 months</option>
-      <option>More than 3 months</option>
-    </select>
-
-    <button>Get Best Insurance Quote</button>
-  </div>
-
-</section>
 
   <!-- INSURANCE FORM -->
   <div class="quote-box">
     <h1>Car & Bike Insurance</h1>
     <p>Renewal • New Policy • Claim Assistance</p>
 
-    <form>
-      <input type="text" placeholder="Vehicle Number" required>
+    <form id="insuranceForm">
+      <input type="text" id="vehicleNumber" placeholder="Vehicle Number" required>
 
-      <select required>
+      <select id="policyExpiry" required>
         <option value="">Policy Expiry</option>
         <option>Expired</option>
         <option>Within 30 days</option>
