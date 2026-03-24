@@ -4,67 +4,60 @@
   <meta charset="UTF-8" />
   <title>SecureRide Insurance Advisor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Car and Bike insurance assistance for renewal, new policy and claim guidance as per IRDAI guidelines." />
+  <meta name="description" content="Car and Bike insurance assistance for renewal, new policy and claim guidance." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header class="header">
   <div class="logo-box">
-    <img src="assets/images/logo.png" alt="SecureRide Logo">
-    <span>SecureRide Insurance Advisor</span>
+    <img src="assets/images/logo.png">
+    <span>SecureRide</span>
   </div>
-  <a href="https://wa.me/917633801161" class="whatsapp-btn" target="_blank">
-    WhatsApp Now
-  </a>
+  <a href="https://wa.me/917633801161" class="whatsapp-btn">WhatsApp Now</a>
 </header>
 
-<!-- HERO -->
 <section class="hero">
 
-  <!-- SLIDER -->
   <div class="slider">
     <img src="assets/images/slider2.jpg" class="slide active">
     <img src="assets/images/slider3.jpg" class="slide">
   </div>
 
-  <!-- FORM -->
+  <div class="overlay"></div>
+
   <div class="quote-box">
-    <h1>Vehicle Insurance Assistance</h1>
-    <p>Car & Bike • Renewal • New Policy</p>
+    <h1>Get Best Vehicle Insurance</h1>
+    <p>Compare • Save • Instant WhatsApp Support</p>
 
     <form onsubmit="sendToWhatsApp(event)">
+      <input type="text" id="name" placeholder="Your Name" required />
       <input type="text" id="vehicle" placeholder="Vehicle Number" required />
       <input type="tel" id="mobile" placeholder="Mobile Number" required />
-      <button type="submit">Request Assistance</button>
+      <button type="submit">Get Best Quote</button>
     </form>
 
-    <small>
-      We provide insurance assistance only. Policy issuance is subject to insurer terms.
-    </small>
-  </div>
-
-  <!-- VEHICLE TAGS -->
-  <div class="vehicle-tags">
-    <span>✔ Two Wheeler</span>
-    <span>✔ Four Wheeler</span>
-    <span>✔ Private Car</span>
-    <span>✔ Bike</span>
-    <span>✔ Commercial Vehicle</span>
+    <small>⚡ Instant response within 5 minutes</small>
   </div>
 
 </section>
 
+<!-- TRUST SECTION -->
+<section class="trust">
+  <div>✔ 15+ Years Experience</div>
+  <div>✔ 5000+ Policies Assisted</div>
+  <div>✔ Fast Claim Support</div>
+</section>
+
 <!-- POLICY TYPES -->
 <section class="section">
-  <h2>Policy Types Supported</h2>
+  <h2>Policy Types</h2>
   <div class="grid">
-    <div>Comprehensive Policy</div>
-    <div>Third Party Policy</div>
-    <div>Own Damage Cover</div>
-    <div>Add-on Guidance</div>
+    <div>Comprehensive</div>
+    <div>Third Party</div>
+    <div>Own Damage</div>
+    <div>Add-ons</div>
   </div>
 </section>
 
@@ -72,28 +65,28 @@
 <section class="section light">
   <h2>Why Choose Us</h2>
   <div class="grid">
-    <div>Experienced Insurance Assistance</div>
-    <div>Transparent Process</div>
-    <div>Renewal Support</div>
+    <div>Best Price Comparison</div>
+    <div>Quick Renewal</div>
     <div>Claim Guidance</div>
-    <div>Privacy Focused</div>
-    <div>WhatsApp Support</div>
+    <div>100% Assistance</div>
   </div>
 </section>
 
-<!-- DISCLAIMER -->
-<section class="disclaimer">
-  <p>
-    <strong>Disclaimer:</strong> SecureRide Insurance Advisor provides assistance and information only.
-    Insurance policies are issued by respective insurers. Coverage, premium and claims are subject to
-    insurer terms and IRDAI regulations. We do not guarantee approval, pricing or claim settlement.
-  </p>
+<!-- TESTIMONIALS -->
+<section class="section">
+  <h2>Customer Reviews</h2>
+  <div class="grid">
+    <div>“Very fast service, got policy in minutes!”</div>
+    <div>“Best premium compared to others.”</div>
+    <div>“Helped during claim process.”</div>
+  </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="footer">
-  © 2026 SecureRide Insurance Advisor. All Rights Reserved.
+  © 2026 SecureRide Insurance Advisor
 </footer>
+
+<a href="https://wa.me/917633801161" class="floating-wa">💬</a>
 
 <script src="script.js"></script>
 </body>
