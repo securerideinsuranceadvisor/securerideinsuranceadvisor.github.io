@@ -24,30 +24,11 @@ body {
   z-index: 100;
 }
 
-.logo-box {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.logo-box img {
-  height: 34px;
-}
-
-.whatsapp-btn {
-  background: #25D366;
-  color: #fff;
-  padding: 8px 14px;
-  border-radius: 20px;
-  text-decoration: none;
-}
-
 /* HERO */
 .hero {
   margin-top: 64px;
   height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 
 /* SLIDER */
@@ -62,14 +43,11 @@ body {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transform: scale(1.1);
-  transition: opacity 1s ease, transform 6s ease;
-  filter: brightness(0.7);
+  transition: opacity 1s ease;
 }
 
 .slide.active {
   opacity: 1;
-  transform: scale(1);
 }
 
 /* OVERLAY */
@@ -83,93 +61,18 @@ body {
 .quote-box {
   position: relative;
   z-index: 3;
-  background: rgba(255,255,255,0.95);
-  backdrop-filter: blur(10px);
+  background: #fff;
   padding: 25px;
-  border-radius: 18px;
+  border-radius: 16px;
   width: 90%;
   max-width: 380px;
   margin: auto;
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
-  box-shadow: 0 25px 60px rgba(0,0,0,.4);
 }
 
-.quote-box h1 {
-  margin-bottom: 8px;
-}
-
-.quote-box p {
-  margin-bottom: 15px;
-  color: #666;
-}
-
-.quote-box input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-.quote-box button {
-  width: 100%;
-  padding: 12px;
-  background: linear-gradient(135deg, #0a58ca, #003c8f);
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.quote-box button:hover {
-  transform: scale(1.03);
-}
-
-/* TRUST */
-.trust {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  background: #fff;
-  font-weight: bold;
-}
-
-/* SECTIONS */
-.section {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.light {
-  background: #eef1f7;
-}
-
-.grid {
-  display: grid;
-  gap: 15px;
-  margin-top: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-}
-
-.grid div {
-  background: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,.1);
-}
-
-/* FOOTER */
-.footer {
-  background: #111;
-  color: #aaa;
-  padding: 15px;
-  text-align: center;
-}
-
-/* FLOAT BUTTON */
+/* FLOAT */
 .floating-wa {
   position: fixed;
   bottom: 20px;
@@ -178,5 +81,4 @@ body {
   color: #fff;
   padding: 15px;
   border-radius: 50%;
-  font-size: 20px;
 }
