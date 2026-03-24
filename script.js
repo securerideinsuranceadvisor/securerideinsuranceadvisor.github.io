@@ -18,10 +18,7 @@ function sendToWhatsApp(e) {
 
   const message =
     `Hello, I need vehicle insurance assistance.\n\n` +
-    `Name: ${name}\n` +
-    `Vehicle: ${vehicle}\n` +
-    `Mobile: ${mobile}`;
+    `Name: ${name}\nVehicle: ${vehicle}\nMobile: ${mobile}`;
 
-  const url = `https://wa.me/917633801161?text=${encodeURIComponent(message)}`;
-  window.open(url, "_blank");
+  window.open(`https://wa.me/917633801161?text=${encodeURIComponent(message)}`);
 }
