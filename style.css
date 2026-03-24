@@ -24,28 +24,22 @@ body {
   z-index: 100;
 }
 
-/* LOGO FIX */
 .logo-box {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-weight: bold;
 }
 
 .logo-box img {
-  height: 40px;   /* ✅ FIXED LOGO SIZE */
+  height: 40px;
   width: auto;
 }
 
 /* HERO */
 .hero {
   margin-top: 64px;
-  height: 100vh;
+  height: calc(100vh - 64px);
   position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* SLIDER */
@@ -62,7 +56,6 @@ body {
   object-fit: cover;
   opacity: 0;
   transition: opacity 1s ease;
-  filter: brightness(0.7); /* ✅ PREMIUM LOOK */
 }
 
 .slide.active {
@@ -77,12 +70,14 @@ body {
   z-index: 2;
 }
 
-/* FORM (FIXED CENTER + PREMIUM) */
+/* FORM (MAIN FIX HERE) */
 .quote-box {
-  position: relative;
+  position: absolute;
   z-index: 3;
-  background: rgba(255,255,255,0.95);
-  backdrop-filter: blur(10px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* ✅ CENTER FIX */
+  background: #fff;
   padding: 25px;
   border-radius: 16px;
   width: 90%;
@@ -98,28 +93,20 @@ body {
   margin-bottom: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
-  font-size: 14px;
 }
 
 /* BUTTON */
 .quote-box button {
   width: 100%;
   padding: 12px;
-  background: linear-gradient(135deg, #0a58ca, #003c8f);
+  background: #0a58ca;
   color: #fff;
   border: none;
   border-radius: 8px;
-  font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-.quote-box button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
-
-/* FLOAT WHATSAPP */
+/* FLOAT */
 .floating-wa {
   position: fixed;
   bottom: 20px;
@@ -128,6 +115,4 @@ body {
   color: #fff;
   padding: 15px;
   border-radius: 50%;
-  font-size: 20px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
