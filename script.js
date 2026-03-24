@@ -12,12 +12,14 @@ setInterval(() => {
 function sendToWhatsApp(e) {
   e.preventDefault();
 
+  const name = document.getElementById("name").value;
   const vehicle = document.getElementById("vehicle").value;
   const mobile = document.getElementById("mobile").value;
 
   const message =
     `Hello, I need vehicle insurance assistance.\n\n` +
-    `Vehicle Number: ${vehicle}\n` +
+    `Name: ${name}\n` +
+    `Vehicle: ${vehicle}\n` +
     `Mobile: ${mobile}`;
 
   const url = `https://wa.me/917633801161?text=${encodeURIComponent(message)}`;
